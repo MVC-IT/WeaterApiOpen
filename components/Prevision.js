@@ -1,6 +1,6 @@
 import { View, Image, Text, StyleSheet } from "react-native";
 
-function Prevision({ toto }) {
+function Prevision({ pre }) {
   return (
     <>
       <View
@@ -20,7 +20,7 @@ function Prevision({ toto }) {
             textTransform: "capitalize",
           }}
         >
-          {new Date(toto.dt_txt).toLocaleDateString("fr-FR", {
+          {new Date(pre.dt_txt).toLocaleDateString("fr-FR", {
             weekday: "short",
             day: "numeric",
             month: "short",
@@ -29,7 +29,7 @@ function Prevision({ toto }) {
         </Text>
         <Image
           source={{
-            uri: `http://openweathermap.org/img/wn/${toto.weather[0].icon}@4x.png`,
+            uri: `http://openweathermap.org/img/wn/${pre.weather[0].icon}@4x.png`,
           }}
           style={{ height: 150, width: 150 }}
         ></Image>
@@ -40,7 +40,7 @@ function Prevision({ toto }) {
             fontWeight: "bold",
           }}
         >
-          {Math.floor(toto.main.temp)} <Text>°C</Text>
+          {Math.floor(pre.main.temp)} <Text>°C</Text>
         </Text>
       </View>
     </>

@@ -115,7 +115,7 @@ export default function App() {
             data={prevision}
             keyExtractor={(item) => item.dt.toString()}
             horizontal={true}
-            renderItem={({ item }) => <Prevision toto={item} />}
+            renderItem={({ item }) => <Prevision pre={item} />}
           />
         </View>
       ) : (

@@ -1,5 +1,9 @@
 import { View, Image, Text, StyleSheet } from "react-native";
 
+{
+  /* Affichage du composant  */
+}
+
 function Prevision({ pre }) {
   return (
     <>

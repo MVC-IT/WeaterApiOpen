@@ -56,6 +56,16 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <Text
+        style={{
+          fontSize: 28,
+          textAlign: "center",
+          color: "#F400A1",
+          fontStyle: "italic",
+        }}
+      >
+        Code name Vice city
+      </Text>
       {/* Affichage du nom de la ville */}
       {cityData ? (
         <View
@@ -79,7 +89,7 @@ export default function App() {
           </Text>
         </View>
       ) : (
-        <ActivityIndicator size="large" color="#00ff00" />
+        <ActivityIndicator size="large" color="pink" />
       )}
 
       {weatherIcon ? (
@@ -102,7 +112,7 @@ export default function App() {
           </Text>
         </View>
       ) : (
-        <ActivityIndicator size="large" color="#00ff00" />
+        <ActivityIndicator size="large" color="pink" />
       )}
 
       {/* Affichage de la température*/}
@@ -119,7 +129,7 @@ export default function App() {
           />
         </View>
       ) : (
-        <ActivityIndicator size="large" color="#00ff00" />
+        <ActivityIndicator size="large" color="pink" />
       )}
 
       <StatusBar style="auto" />

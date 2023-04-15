@@ -9,19 +9,22 @@ function Prevision({ pre }) {
     <>
       <View
         style={{
-          marginHorizontal: 5,
+          marginHorizontal: 10,
           paddingHorizontal: 20,
           paddingVertical: 10,
           flexDirection: "column",
           backgroundColor: "#DCDCDC",
           alignItems: "space-around",
+          borderRadius: 20,
+          backgroundColor: "#00a8ff",
         }}
       >
         <Text
           style={{
+            color: "#000000",
             fontSize: 18,
-            fontWeight: "bold",
-            textTransform: "capitalize",
+            fontStyle: "italic",
+            
           }}
         >
           {new Date(pre.dt_txt).toLocaleDateString("fr-FR", {
@@ -40,7 +43,7 @@ function Prevision({ pre }) {
         <Text
           style={{
             fontSize: 24,
-            color: "#222222",
+            color: "black",
             fontWeight: "bold",
           }}
         >
